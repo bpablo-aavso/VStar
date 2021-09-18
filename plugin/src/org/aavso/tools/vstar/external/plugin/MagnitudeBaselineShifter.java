@@ -128,8 +128,7 @@ public class MagnitudeBaselineShifter extends ObservationTransformerPluginBase {
 	private boolean invokeDialog() {
 		boolean ok = true;
 
-		DoubleField shiftField = new DoubleField("Shift", null, null,
-				Math.abs(shift));
+		DoubleField shiftField = new DoubleField("Shift", null, null, shift);
 		MultiEntryComponentDialog dialog = new MultiEntryComponentDialog(
 				"Magnitude Shift", shiftField);
 
